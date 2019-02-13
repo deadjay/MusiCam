@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		456EE3D92214D5570070E596 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456EE3D82214D5570070E596 /* AppDelegate.swift */; };
+		456EE3DB2214D5570070E596 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456EE3DA2214D5570070E596 /* ViewController.swift */; };
+		456EE3DE2214D5570070E596 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 456EE3DC2214D5570070E596 /* Main.storyboard */; };
+		456EE3E02214D5590070E596 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 456EE3DF2214D5590070E596 /* Assets.xcassets */; };
+		456EE3E32214D5590070E596 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 456EE3E12214D5590070E596 /* LaunchScreen.storyboard */; };
+		456EE3EE2214D55A0070E596 /* MusiCamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456EE3ED2214D55A0070E596 /* MusiCamTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		456EE3EA2214D55A0070E596 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 456EE3CD2214D5570070E596 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 456EE3D42214D5570070E596;
+			remoteInfo = MusiCam;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		456EE3D52214D5570070E596 /* MusiCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusiCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		456EE3D82214D5570070E596 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		456EE3DA2214D5570070E596 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		456EE3DD2214D5570070E596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		456EE3DF2214D5590070E596 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		456EE3E22214D5590070E596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		456EE3E42214D5590070E596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		456EE3E92214D55A0070E596 /* MusiCamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusiCamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		456EE3ED2214D55A0070E596 /* MusiCamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusiCamTests.swift; sourceTree = "<group>"; };
+		456EE3EF2214D55A0070E596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		456EE3D22214D5570070E596 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		456EE3E62214D55A0070E596 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		456EE3CC2214D5570070E596 = {
+			isa = PBXGroup;
+			children = (
+				456EE3D72214D5570070E596 /* MusiCam */,
+				456EE3EC2214D55A0070E596 /* MusiCamTests */,
+				456EE3D62214D5570070E596 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		456EE3D62214D5570070E596 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				456EE3D52214D5570070E596 /* MusiCam.app */,
+				456EE3E92214D55A0070E596 /* MusiCamTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		456EE3D72214D5570070E596 /* MusiCam */ = {
+			isa = PBXGroup;
+			children = (
+				456EE3D82214D5570070E596 /* AppDelegate.swift */,
+				456EE3DA2214D5570070E596 /* ViewController.swift */,
+				456EE3DC2214D5570070E596 /* Main.storyboard */,
+				456EE3DF2214D5590070E596 /* Assets.xcassets */,
+				456EE3E12214D5590070E596 /* LaunchScreen.storyboard */,
+				456EE3E42214D5590070E596 /* Info.plist */,
+			);
+			path = MusiCam;
+			sourceTree = "<group>";
+		};
+		456EE3EC2214D55A0070E596 /* MusiCamTests */ = {
+			isa = PBXGroup;
+			children = (
+				456EE3ED2214D55A0070E596 /* MusiCamTests.swift */,
+				456EE3EF2214D55A0070E596 /* Info.plist */,
+			);
+			path = MusiCamTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		456EE3D42214D5570070E596 /* MusiCam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 456EE3F22214D55A0070E596 /* Build configuration list for PBXNativeTarget "MusiCam" */;
+			buildPhases = (
+				456EE3D12214D5570070E596 /* Sources */,
+				456EE3D22214D5570070E596 /* Frameworks */,
+				456EE3D32214D5570070E596 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MusiCam;
+			productName = MusiCam;
+			productReference = 456EE3D52214D5570070E596 /* MusiCam.app */;
+			productType = "com.apple.product-type.application";
+		};
+		456EE3E82214D55A0070E596 /* MusiCamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 456EE3F52214D55A0070E596 /* Build configuration list for PBXNativeTarget "MusiCamTests" */;
+			buildPhases = (
+				456EE3E52214D55A0070E596 /* Sources */,
+				456EE3E62214D55A0070E596 /* Frameworks */,
+				456EE3E72214D55A0070E596 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				456EE3EB2214D55A0070E596 /* PBXTargetDependency */,
+			);
+			name = MusiCamTests;
+			productName = MusiCamTests;
+			productReference = 456EE3E92214D55A0070E596 /* MusiCamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		456EE3CD2214D5570070E596 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Artem Alekseev";
+				TargetAttributes = {
+					456EE3D42214D5570070E596 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					456EE3E82214D55A0070E596 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 456EE3D42214D5570070E596;
+					};
+				};
+			};
+			buildConfigurationList = 456EE3D02214D5570070E596 /* Build configuration list for PBXProject "MusiCam" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 456EE3CC2214D5570070E596;
+			productRefGroup = 456EE3D62214D5570070E596 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				456EE3D42214D5570070E596 /* MusiCam */,
+				456EE3E82214D55A0070E596 /* MusiCamTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		456EE3D32214D5570070E596 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				456EE3E32214D5590070E596 /* LaunchScreen.storyboard in Resources */,
+				456EE3E02214D5590070E596 /* Assets.xcassets in Resources */,
+				456EE3DE2214D5570070E596 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		456EE3E72214D55A0070E596 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		456EE3D12214D5570070E596 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				456EE3DB2214D5570070E596 /* ViewController.swift in Sources */,
+				456EE3D92214D5570070E596 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		456EE3E52214D55A0070E596 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				456EE3EE2214D55A0070E596 /* MusiCamTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		456EE3EB2214D55A0070E596 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 456EE3D42214D5570070E596 /* MusiCam */;
+			targetProxy = 456EE3EA2214D55A0070E596 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		456EE3DC2214D5570070E596 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				456EE3DD2214D5570070E596 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		456EE3E12214D5590070E596 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				456EE3E22214D5590070E596 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		456EE3F02214D55A0070E596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		456EE3F12214D55A0070E596 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		456EE3F32214D55A0070E596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9K93F66NC9;
+				INFOPLIST_FILE = MusiCam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = deadjay.MusiCam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		456EE3F42214D55A0070E596 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9K93F66NC9;
+				INFOPLIST_FILE = MusiCam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = deadjay.MusiCam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		456EE3F62214D55A0070E596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9K93F66NC9;
+				INFOPLIST_FILE = MusiCamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = deadjay.MusiCamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MusiCam.app/MusiCam";
+			};
+			name = Debug;
+		};
+		456EE3F72214D55A0070E596 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9K93F66NC9;
+				INFOPLIST_FILE = MusiCamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = deadjay.MusiCamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MusiCam.app/MusiCam";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		456EE3D02214D5570070E596 /* Build configuration list for PBXProject "MusiCam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				456EE3F02214D55A0070E596 /* Debug */,
+				456EE3F12214D55A0070E596 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		456EE3F22214D55A0070E596 /* Build configuration list for PBXNativeTarget "MusiCam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				456EE3F32214D55A0070E596 /* Debug */,
+				456EE3F42214D55A0070E596 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		456EE3F52214D55A0070E596 /* Build configuration list for PBXNativeTarget "MusiCamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				456EE3F62214D55A0070E596 /* Debug */,
+				456EE3F72214D55A0070E596 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 456EE3CD2214D5570070E596 /* Project object */;
+}
