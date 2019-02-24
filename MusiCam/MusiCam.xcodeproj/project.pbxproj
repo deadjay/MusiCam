@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		456012A522228DC7008CE0CB /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456012A422228DC7008CE0CB /* RecordViewController.swift */; };
+		456012AA22229B66008CE0CB /* RecordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456012A922229B66008CE0CB /* RecordPresenter.swift */; };
+		456012BD2222B038008CE0CB /* MainRecordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 456012BC2222B038008CE0CB /* MainRecordView.xib */; };
+		456012BF2222B044008CE0CB /* MainRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456012BE2222B044008CE0CB /* MainRecordView.swift */; };
 		456EE3D92214D5570070E596 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456EE3D82214D5570070E596 /* AppDelegate.swift */; };
-		456EE3DB2214D5570070E596 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456EE3DA2214D5570070E596 /* ViewController.swift */; };
-		456EE3DE2214D5570070E596 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 456EE3DC2214D5570070E596 /* Main.storyboard */; };
 		456EE3E02214D5590070E596 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 456EE3DF2214D5590070E596 /* Assets.xcassets */; };
 		456EE3E32214D5590070E596 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 456EE3E12214D5590070E596 /* LaunchScreen.storyboard */; };
 		456EE3EE2214D55A0070E596 /* MusiCamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456EE3ED2214D55A0070E596 /* MusiCamTests.swift */; };
@@ -26,10 +28,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		456012A422228DC7008CE0CB /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		456012A922229B66008CE0CB /* RecordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordPresenter.swift; sourceTree = "<group>"; };
+		456012BC2222B038008CE0CB /* MainRecordView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainRecordView.xib; sourceTree = "<group>"; };
+		456012BE2222B044008CE0CB /* MainRecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRecordView.swift; sourceTree = "<group>"; };
 		456EE3D52214D5570070E596 /* MusiCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusiCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		456EE3D82214D5570070E596 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		456EE3DA2214D5570070E596 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		456EE3DD2214D5570070E596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		456EE3DF2214D5590070E596 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		456EE3E22214D5590070E596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		456EE3E42214D5590070E596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +60,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		456012A222228C66008CE0CB /* RecordScene */ = {
+			isa = PBXGroup;
+			children = (
+				456012A722228DE2008CE0CB /* View */,
+				456012A622228DDB008CE0CB /* Model */,
+				456012A922229B66008CE0CB /* RecordPresenter.swift */,
+			);
+			path = RecordScene;
+			sourceTree = "<group>";
+		};
+		456012A322228C79008CE0CB /* Settings Scene */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Settings Scene";
+			sourceTree = "<group>";
+		};
+		456012A622228DDB008CE0CB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		456012A722228DE2008CE0CB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				456012A422228DC7008CE0CB /* RecordViewController.swift */,
+				456012BC2222B038008CE0CB /* MainRecordView.xib */,
+				456012BE2222B044008CE0CB /* MainRecordView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		456012AD22229DF3008CE0CB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				456EE3DF2214D5590070E596 /* Assets.xcassets */,
+				456EE3E42214D5590070E596 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		456EE3CC2214D5570070E596 = {
 			isa = PBXGroup;
 			children = (
@@ -77,12 +124,11 @@
 		456EE3D72214D5570070E596 /* MusiCam */ = {
 			isa = PBXGroup;
 			children = (
+				456012A322228C79008CE0CB /* Settings Scene */,
+				456012A222228C66008CE0CB /* RecordScene */,
+				456012AD22229DF3008CE0CB /* Resources */,
 				456EE3D82214D5570070E596 /* AppDelegate.swift */,
-				456EE3DA2214D5570070E596 /* ViewController.swift */,
-				456EE3DC2214D5570070E596 /* Main.storyboard */,
-				456EE3DF2214D5590070E596 /* Assets.xcassets */,
 				456EE3E12214D5590070E596 /* LaunchScreen.storyboard */,
-				456EE3E42214D5590070E596 /* Info.plist */,
 			);
 			path = MusiCam;
 			sourceTree = "<group>";
@@ -177,9 +223,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				456012BD2222B038008CE0CB /* MainRecordView.xib in Resources */,
 				456EE3E32214D5590070E596 /* LaunchScreen.storyboard in Resources */,
 				456EE3E02214D5590070E596 /* Assets.xcassets in Resources */,
-				456EE3DE2214D5570070E596 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,8 +243,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				456EE3DB2214D5570070E596 /* ViewController.swift in Sources */,
+				456012A522228DC7008CE0CB /* RecordViewController.swift in Sources */,
 				456EE3D92214D5570070E596 /* AppDelegate.swift in Sources */,
+				456012BF2222B044008CE0CB /* MainRecordView.swift in Sources */,
+				456012AA22229B66008CE0CB /* RecordPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,14 +269,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		456EE3DC2214D5570070E596 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				456EE3DD2214D5570070E596 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		456EE3E12214D5590070E596 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -362,7 +402,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9K93F66NC9;
-				INFOPLIST_FILE = MusiCam/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MusiCam/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -380,7 +420,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9K93F66NC9;
-				INFOPLIST_FILE = MusiCam/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MusiCam/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
