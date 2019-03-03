@@ -13,11 +13,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	var window: UIWindow?
 
-
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 		window = UIWindow(frame: UIScreen.main.bounds)
-		let recordViewController = RecordViewController()
-		window?.rootViewController = recordViewController
+		let recordSceneBuilder = RecordBuilder()
+		window?.rootViewController = recordSceneBuilder.build()
 		window?.makeKeyAndVisible()
 		
 		return true

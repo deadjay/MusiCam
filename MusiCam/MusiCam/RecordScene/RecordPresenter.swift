@@ -8,6 +8,16 @@
 
 import Foundation
 
+protocol RecordPresenterProtocol: class {
+	
+}
+
 class RecordPresenter {
+	weak var view: RecordViewProtocol?
+	
+	
+}
+
+extension RecordPresenter: RecordPresenterProtocol {
 	
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		454ED000222C1F2C00A866EE /* RecordBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454ECFFF222C1F2B00A866EE /* RecordBuilder.swift */; };
+		454ED004222C262400A866EE /* UIView+UINib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454ED003222C262400A866EE /* UIView+UINib.swift */; };
 		456012A522228DC7008CE0CB /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456012A422228DC7008CE0CB /* RecordViewController.swift */; };
 		456012AA22229B66008CE0CB /* RecordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456012A922229B66008CE0CB /* RecordPresenter.swift */; };
 		456012BD2222B038008CE0CB /* MainRecordView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 456012BC2222B038008CE0CB /* MainRecordView.xib */; };
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		454ECFFF222C1F2B00A866EE /* RecordBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordBuilder.swift; sourceTree = "<group>"; };
+		454ED003222C262400A866EE /* UIView+UINib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+UINib.swift"; sourceTree = "<group>"; };
 		456012A422228DC7008CE0CB /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		456012A922229B66008CE0CB /* RecordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordPresenter.swift; sourceTree = "<group>"; };
 		456012BC2222B038008CE0CB /* MainRecordView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainRecordView.xib; sourceTree = "<group>"; };
@@ -60,12 +64,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		454ED001222C25F200A866EE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				454ED002222C25FB00A866EE /* Extensions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		454ED002222C25FB00A866EE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				454ED003222C262400A866EE /* UIView+UINib.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		454ED006222C26F200A866EE /* RecordView */ = {
+			isa = PBXGroup;
+			children = (
+				456012BC2222B038008CE0CB /* MainRecordView.xib */,
+				456012BE2222B044008CE0CB /* MainRecordView.swift */,
+			);
+			path = RecordView;
+			sourceTree = "<group>";
+		};
 		456012A222228C66008CE0CB /* RecordScene */ = {
 			isa = PBXGroup;
 			children = (
 				456012A722228DE2008CE0CB /* View */,
 				456012A622228DDB008CE0CB /* Model */,
 				456012A922229B66008CE0CB /* RecordPresenter.swift */,
+				454ECFFF222C1F2B00A866EE /* RecordBuilder.swift */,
 			);
 			path = RecordScene;
 			sourceTree = "<group>";
@@ -88,8 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				456012A422228DC7008CE0CB /* RecordViewController.swift */,
-				456012BC2222B038008CE0CB /* MainRecordView.xib */,
-				456012BE2222B044008CE0CB /* MainRecordView.swift */,
+				454ED006222C26F200A866EE /* RecordView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -124,6 +153,7 @@
 		456EE3D72214D5570070E596 /* MusiCam */ = {
 			isa = PBXGroup;
 			children = (
+				454ED001222C25F200A866EE /* Helpers */,
 				456012A322228C79008CE0CB /* Settings Scene */,
 				456012A222228C66008CE0CB /* RecordScene */,
 				456012AD22229DF3008CE0CB /* Resources */,
@@ -243,9 +273,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				454ED000222C1F2C00A866EE /* RecordBuilder.swift in Sources */,
 				456012A522228DC7008CE0CB /* RecordViewController.swift in Sources */,
 				456EE3D92214D5570070E596 /* AppDelegate.swift in Sources */,
 				456012BF2222B044008CE0CB /* MainRecordView.swift in Sources */,
+				454ED004222C262400A866EE /* UIView+UINib.swift in Sources */,
 				456012AA22229B66008CE0CB /* RecordPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

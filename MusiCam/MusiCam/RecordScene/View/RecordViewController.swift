@@ -8,6 +8,24 @@
 
 import UIKit
 
+protocol RecordViewProtocol: class {
+	
+}
+
 class RecordViewController: UIViewController {
+	
+	// MARK: - Properties
+	
+	weak var presenter: RecordPresenterProtocol?
+	
+	// MARK: - ViewController Lifecycle
+	
+	override func loadView() {
+		view = MainRecordView.fromNib()
+	}
+	
+}
+
+extension RecordViewController: RecordViewProtocol {
 	
 }
