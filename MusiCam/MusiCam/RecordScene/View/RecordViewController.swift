@@ -8,8 +8,10 @@
 
 import UIKit
 
-protocol RecordViewProtocol: class {
-	
+protocol RecordViewProtocol: class {	
+	func displayProgress()
+	func startTimer()
+	func stopTimer()
 }
 
 class RecordViewController: UIViewController {
@@ -18,14 +20,30 @@ class RecordViewController: UIViewController {
 	
 	weak var presenter: RecordPresenterProtocol?
 	
+	// MARK: - Private Properties
+	
+	private var recordView: MainRecordView = .fromNib()
+	
 	// MARK: - ViewController Lifecycle
 	
 	override func loadView() {
-		view = MainRecordView.fromNib()
+		view = recordView
+		recordView.delegate = presenter
 	}
 	
 }
 
 extension RecordViewController: RecordViewProtocol {
+	func displayProgress() {
+		
+	}
+	
+	func startTimer() {
+		recordView.timerLabel.text = ""
+	}
+	
+	func stopTimer() {
+		recordView.timerLabel.text = "00:00"
+	}
 	
 }

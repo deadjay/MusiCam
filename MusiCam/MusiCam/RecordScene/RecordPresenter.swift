@@ -9,15 +9,26 @@
 import Foundation
 
 protocol RecordPresenterProtocol: class {
-	
+	func recordButtonDidTap()
+	func switchCameraButtonDidTap()
+	func flashButtonDidTap()
 }
 
 class RecordPresenter {
 	weak var view: RecordViewProtocol?
 	
-	
 }
 
 extension RecordPresenter: RecordPresenterProtocol {
+	func recordButtonDidTap() {
+		
+	}
 	
+	func switchCameraButtonDidTap() {
+		
+	}
+	
+	func flashButtonDidTap() {
+		
+	}
 }
