@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 protocol MainRecordViewDelegate: class {
 	func recordButtonDidTap()
@@ -46,5 +47,11 @@ class MainRecordView: UIView {
 	
 	@IBAction func flashButtonDidTap(_ sender: Any) {
 		delegate?.flashButtonDidTap()
+	}
+	
+	// MARK: UIView
+	
+	override class var layerClass: AnyClass {
+		return AVCaptureVideoPreviewLayer.self
 	}
 }

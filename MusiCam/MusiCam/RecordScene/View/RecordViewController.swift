@@ -7,11 +7,13 @@
 //
 
 import UIKit
+import AVFoundation
 
 protocol RecordViewProtocol: class {	
 	func displayProgress()
 	func startTimer()
 	func stopTimer()
+	var videoPreviewLayer: AVCaptureVideoPreviewLayer { get }
 }
 
 class RecordViewController: UIViewController {
@@ -34,6 +36,14 @@ class RecordViewController: UIViewController {
 }
 
 extension RecordViewController: RecordViewProtocol {
+	var videoPreviewLayer: AVCaptureVideoPreviewLayer {
+		guard let layer = recordView.layer as? AVCaptureVideoPreviewLayer else {
+			fatalError("Expected `AVCaptureVideoPreviewLayer` type for layer. Check MainRecordView.layerClass implementation.")
+		}
+		
+		return layer
+	}
+	
 	func displayProgress() {
 		
 	}
