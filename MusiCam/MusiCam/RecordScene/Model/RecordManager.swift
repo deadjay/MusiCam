@@ -20,22 +20,36 @@ class RecordManager {
 	init(with captureSession: AVCaptureSession) {
 		self.captureSession = captureSession
 		
+		captureSession.startRunning()
 		configureSession()
+	}
+	
+	// MARK: - Functions
+	
+	func startSession() {
 	}
 	
 	// MARK: - Private Functions
 	
 	private func configureSession() {
-		captureSession.beginConfiguration()
 		guard let videoDevice = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .unspecified),
 			let audioDevice = AVCaptureDevice.default(for: .audio) else {
 				return
 		}
 		
+		captureSession.beginConfiguration()
+		captureSession.sessionPreset = .high
+
 		addInput(for: videoDevice)
 		addInput(for: audioDevice)
 		
+		let videOutput = AVCaptureVideoDataOutput()
+		let audioOutput = AVCaptureAudioDataOutput()
 		
+		add(videOutput)
+		add(audioOutput)
+		
+		captureSession.commitConfiguration()
 	}
 	
 	private func addInput(for device: AVCaptureDevice) {
@@ -54,4 +68,11 @@ class RecordManager {
 		captureSession.addInput(aDeviceInput)
 	}
 	
+	private func add(_ output: AVCaptureOutput) {
+		guard captureSession.canAddOutput(output) else {
+			return
+		}
+		
+		captureSession.addOutput(output)
+	}
 }

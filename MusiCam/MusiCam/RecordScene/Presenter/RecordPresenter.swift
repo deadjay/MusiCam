@@ -10,6 +10,7 @@ import Foundation
 import AVFoundation
 
 protocol RecordPresenterProtocol: class {
+	func showPreview()
 	func recordButtonDidTap()
 	func switchCameraButtonDidTap()
 	func flashButtonDidTap()
@@ -23,17 +24,24 @@ class RecordPresenter {
 	
 	private var recordManager: RecordManager?
 	
-	init() {
+	// MARK: - Private Functions
+	
+	private func setupRecordManager() {
 		guard let aSession = session else {
 			return
 		}
 		recordManager = RecordManager(with: aSession)
+		recordManager?.startSession()
 	}
-	
 }
 
 
 extension RecordPresenter: RecordPresenterProtocol {
+	func showPreview() {
+		session = AVCaptureSession()
+		setupRecordManager()
+	}
+	
 	var session: AVCaptureSession? {
 		get {
 			return view?.videoPreviewLayer.session

@@ -94,9 +94,9 @@
 		456012A222228C66008CE0CB /* RecordScene */ = {
 			isa = PBXGroup;
 			children = (
+				45EF81F8227497F700D9DF1D /* Presenter */,
 				456012A722228DE2008CE0CB /* View */,
 				456012A622228DDB008CE0CB /* Model */,
-				456012A922229B66008CE0CB /* RecordPresenter.swift */,
 				454ECFFF222C1F2B00A866EE /* RecordBuilder.swift */,
 			);
 			path = RecordScene;
@@ -173,6 +173,14 @@
 				456EE3EF2214D55A0070E596 /* Info.plist */,
 			);
 			path = MusiCamTests;
+			sourceTree = "<group>";
+		};
+		45EF81F8227497F700D9DF1D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				456012A922229B66008CE0CB /* RecordPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

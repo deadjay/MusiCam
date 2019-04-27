@@ -20,7 +20,7 @@ class RecordViewController: UIViewController {
 	
 	// MARK: - Properties
 	
-	weak var presenter: RecordPresenterProtocol?
+	var presenter: RecordPresenterProtocol?
 	
 	// MARK: - Private Properties
 	
@@ -31,6 +31,12 @@ class RecordViewController: UIViewController {
 	override func loadView() {
 		view = recordView
 		recordView.delegate = presenter
+	}
+	
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		
+		presenter?.showPreview()
 	}
 	
 }
