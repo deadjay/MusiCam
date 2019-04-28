@@ -47,9 +47,7 @@ class RecordManager {
 		let audioOutput = AVCaptureAudioDataOutput()
 		
 		add(videOutput)
-		add(audioOutput)
-		
-		captureSession.commitConfiguration()
+		add(audioOutput)		
 	}
 	
 	private func addInput(for device: AVCaptureDevice) {
@@ -66,6 +64,7 @@ class RecordManager {
 		}
 
 		captureSession.addInput(aDeviceInput)
+		captureSession.commitConfiguration()
 	}
 	
 	private func add(_ output: AVCaptureOutput) {
@@ -74,5 +73,6 @@ class RecordManager {
 		}
 		
 		captureSession.addOutput(output)
+		captureSession.commitConfiguration()
 	}
 }
