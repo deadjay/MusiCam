@@ -15,6 +15,18 @@ class RecordManager {
 	
 	private var captureSession: AVCaptureSession
 	
+	private var defaultVideoDevice: AVCaptureDevice? {
+		if let dualCameraDevice = AVCaptureDevice.default(.builtInDualCamera, for: .video, position: .unspecified) {
+			return dualCameraDevice
+		} else if let backCameraDevice = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back) {
+			return backCameraDevice
+		} else if let frontCameraDevice = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .front) {
+			return frontCameraDevice
+		}
+		
+		return nil
+	}
+	
 	// MARK: - Construction
 	
 	init(with captureSession: AVCaptureSession) {
@@ -31,8 +43,8 @@ class RecordManager {
 	
 	// MARK: - Private Functions
 	
-	private func configureSession() {
-		guard let videoDevice = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .unspecified),
+	private func configureSession() {				
+		guard let videoDevice = defaultVideoDevice,
 			let audioDevice = AVCaptureDevice.default(for: .audio) else {
 				return
 		}
