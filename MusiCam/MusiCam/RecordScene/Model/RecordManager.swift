@@ -20,9 +20,7 @@ class RecordManager {
 	// MARK: - Private Properties
 	
 	private var captureSession: AVCaptureSession
-	
 	private let sessionQueue: DispatchQueue
-	
 	private var sessionSetupResult: SessionSetupResult
 	
 	private var defaultVideoDevice: AVCaptureDevice? {

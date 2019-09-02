@@ -1,5 +1,5 @@
 //
-//  RecordBuilder.swift
+//  RecordWireframe.swift
 //  MusiCam
 //
 //  Created by Artem Alekseev on 03/03/2019.
@@ -8,8 +8,12 @@
 
 import Foundation
 
-class RecordBuilder {
-	func build() -> RecordViewController {
+protocol RecordWireframeProtocol: class {
+	static func buildRecordViewController() -> RecordViewController
+}
+
+class RecordWireframe: RecordWireframeProtocol {
+	static func buildRecordViewController() -> RecordViewController {
 		let presenter = RecordPresenter()
 		let view = RecordViewController()
 		presenter.view = view
