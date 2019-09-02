@@ -10,8 +10,8 @@ import Foundation
 import AVFoundation
 
 protocol RecordPresenterProtocol: class {
-	func startRecordSession()
-	func resumeRecordSession()
+	func viewDidLoad()
+	func viewWillAppear()
 	func finishRecordSession()
 	
 	func recordButtonDidTap()
@@ -21,30 +21,24 @@ protocol RecordPresenterProtocol: class {
 	var recordSession: AVCaptureSession? { get set }
 }
 
-class RecordPresenter {
+class RecordPresenter: RecordPresenterProtocol {
+
 	weak var view: RecordViewProtocol?
-	
+
 	// MARK: - Private Properties
-	
-	private var recordManager: RecordManager?
-		
-}
 
+	private var interactor: RecordInteractorProtocol?
 
-extension RecordPresenter: RecordPresenterProtocol {	
-	func startRecordSession() {
-		let session = AVCaptureSession()
-		recordSession = session
-		recordManager = RecordManager(with: session)
-		recordManager?.startSession()
+	func viewDidLoad() {
+		interactor?.startRecordSession()
 	}
 	
-	func resumeRecordSession() {
-		recordManager?.resumeSession()
+	func viewWillAppear() {
+		interactor?.resumeRecordSession()
 	}
 	
 	func finishRecordSession() {
-		recordManager?.finishSession()
+		interactor?.finishRecordSession()
 	}
 		
 	var recordSession: AVCaptureSession? {

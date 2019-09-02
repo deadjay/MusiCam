@@ -36,15 +36,14 @@ class RecordViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		presenter?.startRecordSession()
+		presenter?.viewDidLoad()
 	}
 	
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
 		
-		presenter?.resumeRecordSession()
+		presenter?.viewWillAppear()
 	}
-	
 }
 
 extension RecordViewController: RecordViewProtocol {

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		453F76AA22353C12005BE698 /* RecordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453F76A922353C12005BE698 /* RecordManager.swift */; };
-		454ED000222C1F2C00A866EE /* RecordBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454ECFFF222C1F2B00A866EE /* RecordBuilder.swift */; };
+		454ED000222C1F2C00A866EE /* RecordWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454ECFFF222C1F2B00A866EE /* RecordWireframe.swift */; };
 		454ED004222C262400A866EE /* UIView+UINib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454ED003222C262400A866EE /* UIView+UINib.swift */; };
 		456012A522228DC7008CE0CB /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456012A422228DC7008CE0CB /* RecordViewController.swift */; };
 		456012AA22229B66008CE0CB /* RecordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456012A922229B66008CE0CB /* RecordPresenter.swift */; };
@@ -18,6 +18,7 @@
 		456EE3E02214D5590070E596 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 456EE3DF2214D5590070E596 /* Assets.xcassets */; };
 		456EE3E32214D5590070E596 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 456EE3E12214D5590070E596 /* LaunchScreen.storyboard */; };
 		456EE3EE2214D55A0070E596 /* MusiCamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456EE3ED2214D55A0070E596 /* MusiCamTests.swift */; };
+		459227CC231D22350000E51B /* RecordInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 459227CB231D22350000E51B /* RecordInteractor.swift */; };
 		45C901912275F30E00C8426F /* RecordManagerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C901902275F30E00C8426F /* RecordManagerError.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,7 +34,7 @@
 
 /* Begin PBXFileReference section */
 		453F76A922353C12005BE698 /* RecordManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordManager.swift; sourceTree = "<group>"; };
-		454ECFFF222C1F2B00A866EE /* RecordBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordBuilder.swift; sourceTree = "<group>"; };
+		454ECFFF222C1F2B00A866EE /* RecordWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordWireframe.swift; sourceTree = "<group>"; };
 		454ED003222C262400A866EE /* UIView+UINib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+UINib.swift"; sourceTree = "<group>"; };
 		456012A422228DC7008CE0CB /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		456012A922229B66008CE0CB /* RecordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordPresenter.swift; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		456EE3E92214D55A0070E596 /* MusiCamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusiCamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		456EE3ED2214D55A0070E596 /* MusiCamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusiCamTests.swift; sourceTree = "<group>"; };
 		456EE3EF2214D55A0070E596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		459227CB231D22350000E51B /* RecordInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordInteractor.swift; sourceTree = "<group>"; };
 		45C901902275F30E00C8426F /* RecordManagerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordManagerError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,10 +98,11 @@
 		456012A222228C66008CE0CB /* RecordScene */ = {
 			isa = PBXGroup;
 			children = (
+				459227C8231D20F40000E51B /* Interactor */,
+				459227C5231D18D60000E51B /* Wireframe */,
 				45EF81F8227497F700D9DF1D /* Presenter */,
 				456012A722228DE2008CE0CB /* View */,
 				456012A622228DDB008CE0CB /* Model */,
-				454ECFFF222C1F2B00A866EE /* RecordBuilder.swift */,
 			);
 			path = RecordScene;
 			sourceTree = "<group>";
@@ -176,6 +179,22 @@
 				456EE3EF2214D55A0070E596 /* Info.plist */,
 			);
 			path = MusiCamTests;
+			sourceTree = "<group>";
+		};
+		459227C5231D18D60000E51B /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				454ECFFF222C1F2B00A866EE /* RecordWireframe.swift */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		459227C8231D20F40000E51B /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				459227CB231D22350000E51B /* RecordInteractor.swift */,
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		45EF81F8227497F700D9DF1D /* Presenter */ = {
@@ -287,13 +306,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				454ED000222C1F2C00A866EE /* RecordBuilder.swift in Sources */,
+				454ED000222C1F2C00A866EE /* RecordWireframe.swift in Sources */,
 				456012A522228DC7008CE0CB /* RecordViewController.swift in Sources */,
 				456EE3D92214D5570070E596 /* AppDelegate.swift in Sources */,
 				456012BF2222B044008CE0CB /* MainRecordView.swift in Sources */,
 				454ED004222C262400A866EE /* UIView+UINib.swift in Sources */,
 				453F76AA22353C12005BE698 /* RecordManager.swift in Sources */,
 				456012AA22229B66008CE0CB /* RecordPresenter.swift in Sources */,
+				459227CC231D22350000E51B /* RecordInteractor.swift in Sources */,
 				45C901912275F30E00C8426F /* RecordManagerError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
